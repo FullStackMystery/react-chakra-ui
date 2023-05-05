@@ -47,7 +47,7 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} fontSize={"16px"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>FullStackMystery</Box>
+          <Box fontWeight={"500"} fontSize={"2xl"}>FullStackMystery</Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
