@@ -19,7 +19,7 @@ import {
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon, AddIcon } from '@chakra-ui/icons';
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['Home', 'Dashboard', 'Projects', 'Team'];
 
 var NavLink = function (_a) {
   var children = _a.children;
@@ -32,7 +32,7 @@ var NavLink = function (_a) {
         textDecoration: 'none',
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
-      href={'#'}>
+      href={children}>
       {children}
     </Link>
 
@@ -88,10 +88,10 @@ export default function Nav() {
                     />
                   </MenuButton>
                   <MenuList>
-                    <MenuItem>Link 1</MenuItem>
-                    <MenuItem>Link 2</MenuItem>
+                    <MenuItem>Profile</MenuItem>
+                    <MenuItem>Settings</MenuItem>
                     <MenuDivider />
-                    <MenuItem>Link 3</MenuItem>
+                    <MenuItem>Log Out</MenuItem>
                   </MenuList>
                 </Menu>
               </Flex>
